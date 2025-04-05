@@ -56,3 +56,22 @@ print(datf[datf['score'].between(15,20)])
 
 #zad11
 print(datf[(datf['score']>15) & (datf['attempts']<2)])
+
+#zad13
+datf.iloc[3,1]=11.5
+datf.loc['d','score']=11.5
+print(datf)
+#zad13
+print(f"The sum of attempts is {datf['attempts'].sum()}")
+
+#zad14
+print(datf['score'].mean().round(2))
+
+#zad15
+df2=pad.DataFrame({'name' : "Suresh", 'score': 15.5, 'attempts': 1, 'qualify': "yes"}, index=['k'])
+print(pad.concat([datf,df2]))
+#or
+datf.loc['k']=[1, 'Suresh', 'yes', 17.5]
+print(datf)
+datf=datf.drop('k')
+print(datf)

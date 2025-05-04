@@ -65,33 +65,3 @@ artykul="Apple reported second-fiscal quarter earnings on Thursday that beat Wal
 df=extract_financial_data(artykul)
 print(df.to_string())
 print(artykul)
-
-
-
-
-
-
-
-
-"""
-# Zapytanie do API
-response = client.chat.completions.create(
-    messages=[
-        {
-            "role": "system",
-            "content": "",
-        },
-        {
-            "role": "user",
-            "content": "jaka różnica między uczeniem maszynowym, a AI. Odpowiedz w 3 zdaniach",
-        },
-    ],
-    model="gpt-4o-mini",
-    temperature=1,
-    max_tokens=4096,
-    top_p=1,
-)
-
-# Wyświetlenie odpowiedzi
-print(response.choices[0].message.content)
-"""

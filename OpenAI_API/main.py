@@ -29,7 +29,8 @@ response = client.chat.completions.create(
         },
         {
             "role": "user",
-            "content": "List 3 distinct differences between deep thinking models and standard LLMs like GPT-4o",
+            "content": "elaborate descriptions to dax measures in polish createOrReplace table 'Measure Table' lineageTag: 1fbe4f60-578a-4dd2-b1c7-e38e5f277ea2 /// Total number of items ordered across all transactions measure 'Order Quantity' = SUM( 'Sales Data from Folder'[OrderQuantity] ) formatString: 0 displayFolder: Volume Metrics lineageTag: 0fd582d3-8bcb-46cf-9d1d-794487f0439d",
+            #"content": "List 3 distinct differences between deep thinking models and standard LLMs like GPT-4o",
         },
     ],
     model="gpt-4o-mini",

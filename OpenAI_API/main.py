@@ -33,6 +33,7 @@ response = client.chat.completions.create(
             #"content": "List 3 distinct differences between deep thinking models and standard LLMs like GPT-4o",
         },
     ],
+    #model="openai/gpt-4.1",
     model="gpt-4o-mini",
     temperature=1,
     max_tokens=4096,

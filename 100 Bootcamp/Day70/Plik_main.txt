@@ -12,3 +12,8 @@ Czyli:
 
 Jeśli teraz jesteś na main i zapisałeś plik — ta zmiana "czeka" do commita na main.
 Jeśli jesteś na testowy-branch i zapisałeś plik — zmiana "czeka" do commita na testowy-branch.
+
+
+
+Przełączanie się między branchami:
+checkout w konsoli albo w VS code

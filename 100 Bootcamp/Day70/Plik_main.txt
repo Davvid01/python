@@ -1,0 +1,14 @@
+"Outgoing Changes main" — to oznacza, że Twoja lokalna main ma commity, które nie są jeszcze na GitHubie (są "outgoing", czyli czekają na wysłanie przez git push). Dlatego pojawiają się dwie różne linie/kolory w grafie — pokazują różnice między tymi wersjami.
+
+Podsumowanie kolorów w Graph
+Niebieski = gałąź, na której aktualnie jesteś (active branch)
+Czarny / inny kolor = inne gałęzie lokalne lub zdalne (origin/...)
+Dwa kolory na tej samej gałęzi = że lokalna i zdalna wersja się różnią (coś czeka na push/pull)
+
+
+zmiana w pliku pojawi się jako "Changes" niezależnie od tego, na jakiej gałęzi jesteś — to nie jest coś przypisanego do konkretnej gałęzi, dopóki nie zrobisz commita. Dopiero commit "zapisuje" tę zmianę na konkretnej gałęzi, na której wtedy jesteś.
+
+Czyli:
+
+Jeśli teraz jesteś na main i zapisałeś plik — ta zmiana "czeka" do commita na main.
+Jeśli jesteś na testowy-branch i zapisałeś plik — zmiana "czeka" do commita na testowy-branch.

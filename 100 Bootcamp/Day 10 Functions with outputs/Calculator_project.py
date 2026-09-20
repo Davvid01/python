@@ -1,3 +1,5 @@
+import art
+
 def add(n1, n2):
     return n1 + n2
 
@@ -20,6 +22,7 @@ function_storage = {
 
 
 def calculator():
+    print(art.logo)
     continue_running = True
     number_1 = float(input("What's the first number? "))
     while continue_running:

@@ -66,6 +66,8 @@ def blackjack():
 print(blackjack())
 
 
-
+while input("Do you want to play a new game? 'y' or 'no'") == "y":
+    print("\n" * 20)
+    blackjack()
 
 #print(compare())

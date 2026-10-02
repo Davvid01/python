@@ -30,6 +30,7 @@ def game_guess_number():
     correct_answer = False
     losowa_liczba=random_number()
     print(losowa_liczba)
+    
     while chosen_diffi > 0 and correct_answer is False:
         pick_number = int(input("Make a guess: "))
         correct_answer = check_guess(losowa_liczba,pick_number)

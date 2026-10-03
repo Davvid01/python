@@ -1,19 +1,19 @@
-from turtle import Turtle, Screen
-
-jimmy = Turtle() #creating a new object by assigning an Class
-#Class'es first letter ig grand
-
-
-print(jimmy)
-jimmy.shape("turtle") #call method
-jimmy.color("blue") #method
-jimmy.forward(100)
-
-my_screen = Screen()
-print(my_screen.canvheight) #called attrribute (variable)
+from menu import Menu
+from coffee_maker import CoffeeMaker
+from money_machine import MoneyMachine
 
 
-#method -> a function tied with the object
-my_screen.exitonclick()
+money_machine = MoneyMachine()
+coffee_maker = CoffeeMaker()
+menu = Menu()
+is_on = True
+
+money_machine.report()
+
+coffee_maker.report()
 
 
+while is_on:
+    options = menu.get_items()
+    choice = input(f"Wgat would toy like: {options} ")
+    is_on=False

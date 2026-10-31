@@ -31,17 +31,3 @@ print(weather_f)
 for (value,key) in passed_students.items():
     print(value)
 
-import pandas
-student_dataframe = pandas.DataFrame(list(passed_students.items()), columns=["name", "grade"])
-print(student_dataframe)
-
-
-#for (key,value) in  student_dataframe.items():
-#    print(value)
-
-for (index,row) in student_dataframe.iterrows():
-    print(row)      #cała series
-    print(row.name) #klucz
-    print(row.grade) #wartosc
-    if row.name =="Angela":
-        print(row.grade)
